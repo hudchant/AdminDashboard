@@ -1,0 +1,381 @@
+/* External font */
+@font-face {
+    font-family: 'Dosis-SemiBold';
+    src: url(assets/fonts/Dosis/static/Dosis-SemiBold.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dosis-SemiBold', sans-serif;
+    margin: 0; 
+    height: 100vh;
+    width: 100vw;
+}
+
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+/* Set of three buttons for adding, uploading, and sharing content */
+button {
+    border: 3px solid #1e293b;
+    background-color: #1e293b;
+    color:#fef2f2;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 48%; 
+    width: 80px;
+    height: 30px;
+    margin-right: 25px;
+    padding: 10px 12px;
+    border-radius: 20px;
+    line-height: 5px;
+}
+
+/* Setup for the columns that make up the grid */
+.container {
+    display: grid;
+    grid-template-columns: 215px 3fr 1fr;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Styling for the left-side dashboard */
+.header {
+    background-color: #1e293b;
+    color: #fef2f2;
+    grid-row: 1 / 3; 
+}
+
+/* Dashboard text styling */
+.dashboard {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: bolder;
+    vertical-align: text-top;
+    margin-top: 0px;
+    margin-left: -20px;
+}
+
+/* Logo styling for image on left side of the dashboard text */
+.logo svg {
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+    
+}
+
+/* Placement of the logo container */
+.logo {
+    margin-top: 15px;
+}
+
+/* Changing the fill color and making other adjustments for the embedded SVG icons */
+svg {
+    fill: #fef2f2;
+    height: 20px;
+    width: 20px;
+    margin-right: 40px;
+    vertical-align: text-top;
+}
+
+.menu ul li svg, .submenu ul li svg {
+    margin-left: -22px;
+}
+
+/* Styling for the dashboard text options */
+.menu ul li, .submenu ul li {
+    font-size: 18px;
+    font-weight: bolder;
+    padding-bottom: 16px;
+    align-items: left;
+    vertical-align: center;
+}
+
+.menu-item {
+    margin-left: -12px;
+}
+
+.menu {
+    margin-top: 45px;
+}
+
+.submenu {
+    padding-top: 10px;
+}
+
+/* Setting the columns and rows for the header at the top of the page */
+.welcome {
+    grid-column: 2 / 5;
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: #ffffff;
+}
+
+/* Styling the top row of the website header */
+.first-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    justify-items: center; 
+    align-items: center; 
+}
+
+/* Styling the bottom row of the website header */
+.second-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    justify-items: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* The search icon beside the text entry field */
+.icon {
+    display: flex;
+    align-items: center; 
+    margin-left: 50px;
+}
+
+/* The text entry field */
+.text-input {
+    margin-left: 5px; 
+}
+
+/* Notification bell image */
+.notification {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 225px; 
+}
+
+/* Container for the user avatar located on the left side of the user welcome message */
+.panda-info {
+    display: flex;
+    justify-content: left;
+    width: 400px;
+}
+
+.buttons-container {
+    grid-column: 5; 
+    justify-self: end;  
+}
+
+/* Placing the buttons in a single row */
+.buttons {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end; 
+    margin-right: 60px;
+}
+
+/* Container for the user welcome message text */
+.greeting {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start; 
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+/* Removing the li bullet points */
+.header > div > ul {
+    list-style-type: none;
+}
+
+/* Designating a grid column for the user project cards */
+.your-project {
+    grid-column: 2 / 3;
+    background-color: #f3f4f6;
+    border-top: 4px solid #d3d3d3;
+}
+
+.your-project p {
+    margin-left: 12px;
+    margin-bottom: 0;
+}
+
+/* Resizing the project card grid columns */
+.project {
+    display: grid;
+    grid-template-columns: 340px 340px;
+    background-color: #f3f4f6;
+    margin-left: 12px;
+
+}
+
+/* Styling of the individual project cards */
+.project-card {
+    border-left: 8px solid #fbbf24;
+    box-shadow: 3px 3px 3px #d3d3d3;
+    border-radius: 3%;
+    padding: 15px;
+    height: 214px;
+    width: 325px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.project-card .title {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.project-card .description {
+    font-size: 12px;
+    color: #636363;
+}
+
+/* Container for all three icons included on each of the project cards */
+.icon-container { 
+    display: flex; 
+    justify-content: flex-end; 
+    position: absolute; 
+    bottom: 10px; 
+    right: -30px; 
+} 
+
+/* Changing the fill color of the embedded SVG's used on each of the project cards */
+.icon-container svg { 
+    height: 18px; 
+    width: 18px; 
+    fill: #000000;
+    margin-left: -25px;
+}
+
+/* Styling for the first text line of the user greeting in the header */
+.hi {
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* Styling for the second text line of the user greeting in the header */
+.name {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+
+/* Search text input box */
+input[type="text"] {
+    background-color: #cccccc;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 20px; 
+    outline: none;
+    width: 500px;
+    height: 23px;
+    margin-top: 5px;
+}
+
+/* Larger panda image used in the header greeting to the user */
+#panda-one {
+    height: 60px;
+    width: 60px;
+    margin-left: 30px;
+}
+
+/* Smaller panda image used beside the notification bell in the header */
+#panda-two {
+    height: 40px;
+    width: 40px;
+}
+
+/* Changing the fill color for all SVG embedded images used in website header */
+.welcome svg {
+    fill: #000000;
+    padding: 0;
+    margin: 3px 0px 0px 10px;
+}
+
+/* Styling for the sidebar, including the announcements and the trending users list*/
+.sidebar {
+    background-color:#f3f4f6;
+    padding: 0px;
+    border-top: 4px solid #d3d3d3;
+    margin-left: -85px;
+}
+
+/* Placement for announcements container in sidebar */
+.sidebar-announce {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 3px #d3d3d3;
+    border-radius: 3%;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 25px;
+    width: 250px; 
+    height: 345px;
+}
+
+/* Placement for trending container in sidebar */
+.sidebar-trend {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 3px #d3d3d3;
+    border-radius: 3%;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 25px;
+    width: 250px;
+    height: auto;
+}
+
+.sidebar-announce .title {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.sidebar-announce .title-description {
+    font-size: 12px;
+    color:#636363;
+}
+
+.announcement, .trending, .your-projects {
+    height: 40px;
+}
+
+/* Separate containers for each of the four trending users */
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 7px;
+    height: 55px;
+}
+
+/* Positioning of the username and user info so both text entries are centered with the user avatar */
+.user-content {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+}
+
+/* Resizing of the trending users' icons */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.username {
+    font-size: 12px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.user-info {
+    font-size: 14px;
+    color: #636363;
+    margin: 0;
+}
